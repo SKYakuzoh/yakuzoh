@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapports d'audit — SK Security</title>
+  <meta name="description" content="Rapports de pentest sur machines HackTheBox retirées. Active Directory, Web Application, Infrastructure." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
+<nav class="navbar" aria-label="Navigation principale">
+  <a href="index.html" class="nav-logo" aria-label="SK Security — accueil">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
+            fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#CC2200" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    SK&nbsp;<span>SECURITY</span>
+  </a>
+
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+    <span></span><span></span><span></span>
+  </button>
+
+  <ul class="nav-links" id="nav-list" role="list">
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="reports.html">Rapports</a></li>
+    <li><a href="methodology.html">Méthodologie</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="container">
+
+    <!-- ── PAGE HERO ────────────────────────────────────────────────────── -->
+    <div class="page-hero">
+      <p class="section-label">Audits</p>
+      <h1>Rapports d'audit</h1>
+      <p>Machines retirées HackTheBox — réalisés dans un cadre légal et pédagogique.</p>
+    </div>
+
+    <!-- ── DISCLAIMER ───────────────────────────────────────────────────── -->
+    <div class="disclaimer" role="note">
+      ⓘ&nbsp; Ces rapports sont réalisés sur des machines HackTheBox retirées du service actif,
+      dans un cadre légal et pédagogique. Ils illustrent la qualité des livrables fournis
+      dans le cadre de missions professionnelles.
+    </div>
+
+    <!-- ── REPORTS GRID ──────────────────────────────────────────────────── -->
+    <div class="reports-grid">
+
+      <!-- Egotistical Bank -->
+      <article class="report-card" aria-label="Rapport Egotistical Bank">
+        <div class="report-card-header">
+          <h2 class="report-card-title">Egotistical Bank</h2>
+        </div>
+        <div class="report-card-meta">
+          <span class="badge badge-hard">Hard</span>
+          <span class="badge badge-type">Active Directory</span>
+          <span class="badge badge-crit">Critique</span>
+        </div>
+        <p class="report-card-desc">
+          Compromission complète d'un environnement Active Directory.
+          Exploitation AS-REP Roasting, DCSync et chaîne d'escalade de privilèges.
+        </p>
+        <div class="report-card-footer">
+          <a href="reports/egotistical_bank.pdf" class="btn" target="_blank" rel="noopener">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"
+                    stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
+              <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.75"/>
+            </svg>
+            Voir le rapport
+          </a>
+        </div>
+      </article>
+
+      <!-- Pirate (placeholder) -->
+      <article class="report-card disabled" aria-label="Rapport Pirate — en cours">
+        <div class="report-card-header">
+          <h2 class="report-card-title">Pirate</h2>
+        </div>
+        <div class="report-card-meta">
+          <span class="badge badge-hard">Hard</span>
+          <span class="badge badge-type">Active Directory</span>
+          <span class="badge badge-crit">Critique</span>
+        </div>
+        <p class="report-card-desc">
+          Environnement Active Directory complexe. Rapport en cours de rédaction.
+        </p>
+        <div class="report-card-footer">
+          <span class="btn btn-outline" aria-disabled="true">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.75"/>
+              <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.75"
+                        stroke-linecap="round"/>
+            </svg>
+            Rapport en cours
+          </span>
+        </div>
+      </article>
+
+    </div><!-- /reports-grid -->
+
+    <!-- ── LEGEND ────────────────────────────────────────────────────────── -->
+    <div style="margin: 3rem 0 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+      <p class="section-label" style="margin-bottom:1rem;">Légende des niveaux</p>
+      <div style="display:flex; flex-wrap:wrap; gap:.75rem;">
+        <span class="badge badge-crit">Critique</span>
+        <span class="badge badge-hard">Élevé</span>
+        <span class="badge badge-medium">Moyen</span>
+        <span class="badge badge-easy">Bas</span>
+        <span class="badge badge-easy" style="color:var(--text-muted);border-color:var(--border)">Informatif</span>
+      </div>
+      <p style="font-size:.8rem; color:var(--text-muted); margin-top:1rem;">
+        Niveaux de sévérité basés sur le scoring CVSS 4.0.
+        Voir la <a href="methodology.html">page Méthodologie</a> pour les détails.
+      </p>
+    </div>
+
+  </div><!-- /container -->
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 SK Security —
+    <a href="mailto:contact@sk-security.fr">contact@sk-security.fr</a>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
