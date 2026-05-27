@@ -51,60 +51,7 @@
     </div>
 
     <!-- ── REPORTS GRID ──────────────────────────────────────────────────── -->
-    <div class="reports-grid">
-
-      <!-- Egotistical Bank -->
-      <article class="report-card" aria-label="Rapport Egotistical Bank">
-        <div class="report-card-header">
-          <h2 class="report-card-title">Egotistical Bank</h2>
-        </div>
-        <div class="report-card-meta">
-          <span class="badge badge-hard">Hard</span>
-          <span class="badge badge-type">Active Directory</span>
-          <span class="badge badge-crit">Critique</span>
-        </div>
-        <p class="report-card-desc">
-          Compromission complète d'un environnement Active Directory.
-          Exploitation AS-REP Roasting, DCSync et chaîne d'escalade de privilèges.
-        </p>
-        <div class="report-card-footer">
-          <a href="reports/egotistical_bank.pdf" class="btn" target="_blank" rel="noopener">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"
-                    stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
-              <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.75"/>
-            </svg>
-            Voir le rapport
-          </a>
-        </div>
-      </article>
-
-      <!-- Pirate (placeholder) -->
-      <article class="report-card disabled" aria-label="Rapport Pirate — en cours">
-        <div class="report-card-header">
-          <h2 class="report-card-title">Pirate</h2>
-        </div>
-        <div class="report-card-meta">
-          <span class="badge badge-hard">Hard</span>
-          <span class="badge badge-type">Active Directory</span>
-          <span class="badge badge-crit">Critique</span>
-        </div>
-        <p class="report-card-desc">
-          Environnement Active Directory complexe. Rapport en cours de rédaction.
-        </p>
-        <div class="report-card-footer">
-          <span class="btn btn-outline" aria-disabled="true">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.75"/>
-              <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.75"
-                        stroke-linecap="round"/>
-            </svg>
-            Rapport en cours
-          </span>
-        </div>
-      </article>
-
-    </div><!-- /reports-grid -->
+    <div class="reports-grid" id="reports-grid"></div>
 
     <!-- ── LEGEND ────────────────────────────────────────────────────────── -->
     <div style="margin: 3rem 0 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
@@ -133,5 +80,6 @@
 </footer>
 
 <script src="js/main.js"></script>
+<script src="js/reports.js"></script>
 </body>
 </html>
