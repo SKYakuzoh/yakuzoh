@@ -1,3 +1,16 @@
+const RISK_CLASS = {
+  'Critique': 'badge-crit',
+  'Élevé':    'badge-hard',
+  'Moyen':    'badge-medium',
+  'Bas':      'badge-easy',
+};
+const DIFF_CLASS = {
+  'Easy':   'badge-easy',
+  'Medium': 'badge-medium',
+  'Hard':   'badge-hard',
+  'Insane': 'badge-crit',
+};
+
 fetch('reports/reports.json')
   .then(r => r.json())
   .then(reports => {
@@ -5,8 +18,8 @@ fetch('reports/reports.json')
     grid.innerHTML = reports.map(r => `
       <div class="report-card ${!r.available ? 'disabled' : ''}">
         <div class="report-card-header">
-          <span class="badge badge-crit">${r.risk}</span>
-          <span class="badge">${r.difficulty}</span>
+          <span class="badge ${RISK_CLASS[r.risk] || 'badge-crit'}">${r.risk}</span>
+          <span class="badge ${DIFF_CLASS[r.difficulty] || ''}">${r.difficulty}</span>
         </div>
         <h3>${r.name}</h3>
         <p>${r.type}</p>
@@ -17,6 +30,16 @@ fetch('reports/reports.json')
         }
       </div>
     `).join('');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+      });
+    }, { threshold: 0.1 });
+    grid.querySelectorAll('.report-card').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
   })
   .catch(e => {
     document.getElementById('reports-grid').innerHTML = '<p>Erreur de chargement des rapports.</p>';

@@ -164,6 +164,12 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   color: var(--text-muted);
 }
 .btn-outline:hover { border-color: var(--accent); color: var(--text); background: transparent; }
+.btn-disabled {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  cursor: default; pointer-events: none;
+}
 
 /* ─── ABOUT ───────────────────────────────────────────────────────────────── */
 .about-grid {
