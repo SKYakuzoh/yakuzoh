@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Méthodologie — SK Security</title>
-  <meta name="description" content="Approche structurée basée sur la Cyber Kill Chain. Scoring CVSS 4.0, outils et livrables." />
+  <title>Méthodologie · SK Security</title>
+  <meta name="description" content="Approche structurée basée sur la Cyber Kill Chain. Scoring CVSS 3.1 / CVSS 4.0, outils et livrables." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
 <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
 <nav class="navbar" aria-label="Navigation principale">
-  <a href="index.html" class="nav-logo" aria-label="SK Security — accueil">
+  <a href="index.html" class="nav-logo" aria-label="SK Security, accueil">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
             fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5" stroke-linejoin="round"/>
@@ -58,9 +58,9 @@
           <div class="kc-content">
             <h3>Reconnaissance</h3>
             <p>
-              Collecte passive et active d'informations sur la cible —
-              OSINT, énumération DNS, cartographie des services exposés,
-              identification des technologies et versions.
+              La phase de reconnaissance combine collecte passive et active : OSINT,
+              énumération DNS, cartographie des services exposés et identification
+              des technologies en place.
             </p>
           </div>
         </div>
@@ -70,9 +70,9 @@
           <div class="kc-content">
             <h3>Armement</h3>
             <p>
-              Identification et préparation des vecteurs d'attaque pertinents
-              en fonction de la surface exposée — exploitation de CVE, création de
-              payloads adaptés au contexte.
+              Sur la base de la surface exposée, les vecteurs d'attaque pertinents sont
+              identifiés et préparés : exploitation de CVE connues et création de payloads
+              adaptés au contexte.
             </p>
           </div>
         </div>
@@ -82,9 +82,8 @@
           <div class="kc-content">
             <h3>Livraison</h3>
             <p>
-              Déclenchement du vecteur d'attaque — injection web, exploitation
-              de services réseau, phishing ciblé (Red Team), ou accès physique
-              selon le périmètre convenu.
+              Le vecteur d'attaque est déclenché selon le périmètre convenu : injection web,
+              exploitation de services réseau, phishing ciblé en contexte Red Team ou accès physique.
             </p>
           </div>
         </div>
@@ -94,9 +93,9 @@
           <div class="kc-content">
             <h3>Exploitation</h3>
             <p>
-              Exécution de l'exploit — obtention d'un premier accès, élévation de
-              privilèges locaux, exploitation de mauvaises configurations
-              (Active Directory, services, applications).
+              L'exploit est exécuté pour obtenir un premier accès, élever les privilèges locaux
+              et exploiter les mauvaises configurations présentes dans les services, les applications
+              ou l'Active Directory.
             </p>
           </div>
         </div>
@@ -106,8 +105,8 @@
           <div class="kc-content">
             <h3>Installation</h3>
             <p>
-              Maintien de l'accès, déploiement de mécanismes de persistance —
-              documentation exhaustive des actions pour le rapport et le retest.
+              Les accès obtenus sont maintenus et des mécanismes de persistance sont déployés.
+              L'ensemble des actions est documenté de façon exhaustive pour le rapport et le retest.
             </p>
           </div>
         </div>
@@ -117,9 +116,9 @@
           <div class="kc-content">
             <h3>Command &amp; Control</h3>
             <p>
-              Mouvement latéral dans l'environnement — propagation horizontale et
-              verticale, pivoting réseau, compromission de comptes privilégiés
-              et de contrôleurs de domaine.
+              Le mouvement latéral est mené dans l'environnement par propagation horizontale
+              et verticale, pivoting réseau et compromission de comptes privilégiés
+              jusqu'aux contrôleurs de domaine.
             </p>
           </div>
         </div>
@@ -129,9 +128,9 @@
           <div class="kc-content">
             <h3>Actions sur objectifs</h3>
             <p>
-              Atteinte des objectifs définis (DA, données sensibles, exfiltration
-              simulée) — démonstration de l'impact réel et rédaction du rapport
-              avec timeline complète des actions.
+              Les objectifs définis sont atteints, qu'il s'agisse de la compromission du domaine,
+              de l'accès à des données sensibles ou d'une exfiltration simulée. L'impact réel est
+              démontré et documenté dans un rapport incluant la timeline complète des actions.
             </p>
           </div>
         </div>
@@ -142,9 +141,9 @@
     <!-- ── SCORING CVSS ──────────────────────────────────────────────────── -->
     <section id="scoring" style="padding: 3rem 0 2rem;">
       <p class="section-label">Scoring</p>
-      <h2>CVSS 4.0 — Niveaux de sévérité</h2>
+      <h2>CVSS 3.1 / CVSS 4.0 : Niveaux de sévérité</h2>
       <p style="color:var(--text-muted);font-size:.9rem; max-width:560px;">
-        Chaque vulnérabilité est scorée selon le standard CVSS 4.0 en tenant compte
+        Chaque vulnérabilité est scorée selon les standards CVSS 3.1 et CVSS 4.0, en tenant compte
         de l'exploitabilité, de l'impact et du contexte environnemental.
       </p>
 
@@ -185,39 +184,19 @@
       <div class="tools-grid">
         <div class="tool-cat">
           <h3>Recon &amp; Énumération</h3>
-          <ul>
-            <li>Scan réseau &amp; découverte de services</li>
-            <li>Énumération web (répertoires, sous-domaines)</li>
-            <li>Reconnaissance Active Directory</li>
-            <li>OSINT &amp; collecte passive</li>
-          </ul>
+          <p>Cette phase couvre le scan réseau et la découverte de services, l'énumération web par répertoires et sous-domaines, la reconnaissance Active Directory ainsi que la collecte passive via OSINT.</p>
         </div>
         <div class="tool-cat">
           <h3>Exploitation</h3>
-          <ul>
-            <li>Exploitation de vulnérabilités web (injection, auth bypass)</li>
-            <li>Exploitation AD (AS-REP, Kerberoasting, ACL abuse)</li>
-            <li>Brute-force &amp; credential stuffing ciblé</li>
-            <li>Exploitation de CVE publics</li>
-          </ul>
+          <p>Les vulnérabilités web sont exploitées de manière ciblée : injections et contournements d'authentification, failles Active Directory (AS-REP roasting, Kerberoasting, abus d'ACL), brute-force ciblé et CVE publics selon le contexte.</p>
         </div>
         <div class="tool-cat">
           <h3>Post-Exploitation</h3>
-          <ul>
-            <li>Pivoting &amp; mouvement latéral</li>
-            <li>Élévation de privilèges (local &amp; domaine)</li>
-            <li>Extraction de credentials &amp; secrets</li>
-            <li>Persistance &amp; C2 (périmètre Red Team)</li>
-          </ul>
+          <p>Une fois l'accès initial obtenu, le pivoting et le mouvement latéral étendent la compromission. L'élévation de privilèges, l'extraction de credentials et la mise en place de persistance ou d'infrastructure C2 sont réalisées dans le cadre des missions Red Team.</p>
         </div>
         <div class="tool-cat">
           <h3>Reporting</h3>
-          <ul>
-            <li>Documentation des preuves de concept</li>
-            <li>Timeline des actions horodatées</li>
-            <li>Capture d'écran &amp; logs annotés</li>
-            <li>Rédaction rapport PDF professionnel</li>
-          </ul>
+          <p>Chaque action est consignée avec ses preuves de concept, captures d'écran et logs annotés. Une timeline horodatée retrace l'ensemble de l'engagement, servant de base à la rédaction du rapport PDF professionnel.</p>
         </div>
       </div>
     </section>
@@ -236,9 +215,7 @@
           </svg>
           <div>
             <h3>Rapport PDF professionnel</h3>
-            <p>Résumé exécutif non-technique + rapport technique détaillé. Chaque vulnérabilité
-            inclut : description, preuve de concept, score CVSS 4.0, impact business,
-            et recommandations de remédiation concrètes.</p>
+            <p>Le rapport comprend un résumé exécutif non technique et un volet technique détaillé. Chaque vulnérabilité y est décrite avec sa preuve de concept, son score CVSS 3.1 / CVSS 4.0, son impact business et des recommandations de remédiation concrètes.</p>
           </div>
         </div>
 
@@ -250,8 +227,7 @@
           </svg>
           <div>
             <h3>Timeline des actions</h3>
-            <p>Journal chronologique horodaté de l'ensemble des actions réalisées pendant
-            l'audit — traçabilité complète pour audit interne ou conformité.</p>
+            <p>Journal chronologique horodaté de l'ensemble des actions réalisées pendant l'audit, assurant une traçabilité complète pour vos besoins d'audit interne ou de conformité.</p>
           </div>
         </div>
 
@@ -262,8 +238,7 @@
           </svg>
           <div>
             <h3>Indicateurs de compromission (IoC)</h3>
-            <p>Liste des artefacts laissés pendant le test — IP, hashes, fichiers créés —
-            pour faciliter le nettoyage et la comparaison avec les alertes de votre SOC.</p>
+            <p>Un inventaire des artefacts laissés pendant le test (adresses IP, hashes, fichiers créés) est fourni pour faciliter le nettoyage et la comparaison avec les alertes de votre SOC.</p>
           </div>
         </div>
 
@@ -303,7 +278,7 @@
 
 <footer>
   <div class="container">
-    © 2026 SK Security —
+    © 2026 SK Security ·
     <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
   </div>
 </footer>
