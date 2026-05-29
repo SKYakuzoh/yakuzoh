@@ -7,14 +7,5 @@
     "file": "reports/egotistical_bank.pdf",
     "available": true,
     "description": "Compromission complète d'un environnement Active Directory."
-  },
-  {
-    "name": "Pirate",
-    "difficulty": "Hard",
-    "type": "Active Directory",
-    "risk": "Critique",
-    "file": "reports/pirate.pdf",
-    "available": true,
-    "description": "Compromission complète d'un environnement Active Directory."
   }
 ]
