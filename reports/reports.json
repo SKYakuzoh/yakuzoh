@@ -7,5 +7,15 @@
     "file": "reports/egotistical_bank.pdf",
     "available": true,
     "description": "Compromission complète d'un environnement Active Directory."
+  },
+  {
+    "name": "Writeup",
+    "difficulty": "Easy",
+    "type": "Web Application",
+    "risk": "Critique",
+    "file": "reports/writeup.pdf",
+    "available": true,
+    "description": "Compromission complète d'un environnement Web."
   }
+
 ]
