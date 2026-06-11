@@ -244,11 +244,41 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   margin: 2rem 0;
 }
 
-.reports-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.25rem;
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
   margin-top: 1.5rem;
+}
+
+.carousel-btn {
+  flex-shrink: 0;
+  width: 40px; height: 40px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: border-color .2s, color .2s, background .2s;
+  display: flex; align-items: center; justify-content: center;
+}
+.carousel-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--bg-hover);
+}
+.carousel-btn:disabled {
+  opacity: .25;
+  cursor: default;
+}
+
+.reports-grid {
+  display: flex;
+  gap: 1.25rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  flex: 1;
 }
 
 .report-card {
@@ -257,6 +287,14 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   border-radius: 6px; padding: 1.5rem;
   transition: border-color .2s, background .2s, transform .2s;
   display: flex; flex-direction: column; gap: .75rem;
+  flex: 0 0 calc((100% - 2 * 1.25rem) / 3);
+  scroll-snap-align: start;
+}
+@media (max-width: 900px) {
+  .report-card { flex: 0 0 calc((100% - 1.25rem) / 2); }
+}
+@media (max-width: 600px) {
+  .report-card { flex: 0 0 100%; }
 }
 .report-card:not(.disabled):hover {
   border-color: rgba(204,34,0,.4);

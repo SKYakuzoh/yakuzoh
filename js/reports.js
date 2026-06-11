@@ -40,6 +40,29 @@ fetch('reports/reports.json')
       el.classList.add('reveal');
       observer.observe(el);
     });
+
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+
+    function scrollStep() {
+      const card = grid.querySelector('.report-card');
+      return card ? card.offsetWidth + 20 : 320;
+    }
+
+    function updateArrows() {
+      prevBtn.disabled = grid.scrollLeft <= 0;
+      nextBtn.disabled = grid.scrollLeft + grid.clientWidth >= grid.scrollWidth - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      grid.scrollBy({ left: -scrollStep(), behavior: 'smooth' });
+    });
+    nextBtn.addEventListener('click', () => {
+      grid.scrollBy({ left: scrollStep(), behavior: 'smooth' });
+    });
+
+    grid.addEventListener('scroll', updateArrows, { passive: true });
+    updateArrows();
   })
   .catch(e => {
     document.getElementById('reports-grid').innerHTML = '<p>Erreur de chargement des rapports.</p>';
