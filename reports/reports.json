@@ -34,5 +34,14 @@
     "file": "reports/jeeves.pdf",
     "available": true,
     "description": "Compromission complète d'un Serveur Windows."
+  },
+  {
+    "name": "Trick",
+    "difficulty": "Easy",
+    "type": "Web Application",
+    "risk": "Critique",
+    "file": "reports/trick.pdf",
+    "available": true,
+    "description": "Compromission complète d'un environnement Web."
   }
 ]
