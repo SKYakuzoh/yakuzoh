@@ -25,5 +25,14 @@
     "file": "reports/fluffy.pdf",
     "available": true,
     "description": "Compromission complète d'un environnement Active Directory."
+  },
+  {
+    "name": "Jeeves",
+    "difficulty": "Medium",
+    "type": "Active Directory",
+    "risk": "Critique",
+    "file": "reports/jeeves.pdf",
+    "available": true,
+    "description": "Compromission complète d'un Serveur Windows."
   }
 ]
