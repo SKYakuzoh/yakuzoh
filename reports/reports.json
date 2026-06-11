@@ -16,6 +16,14 @@
     "file": "reports/writeup.pdf",
     "available": true,
     "description": "Compromission complète d'un environnement Web."
+  },
+  {
+    "name": "Fluffy",
+    "difficulty": "Easy",
+    "type": "Active Directory",
+    "risk": "Critique",
+    "file": "reports/fluffy.pdf",
+    "available": true,
+    "description": "Compromission complète d'un environnement Active Directory."
   }
-
 ]
