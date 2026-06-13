@@ -29,7 +29,7 @@
   {
     "name": "Jeeves",
     "difficulty": "Medium",
-    "type": "Active Directory",
+    "type": "Windows",
     "risk": "Critique",
     "file": "reports/jeeves.pdf",
     "available": true,
@@ -41,6 +41,15 @@
     "type": "Web Application",
     "risk": "Critique",
     "file": "reports/trick.pdf",
+    "available": true,
+    "description": "Compromission complète d'un environnement Web."
+  },
+  {
+    "name": "Postman",
+    "difficulty": "Easy",
+    "type": "Web Application",
+    "risk": "Critique",
+    "file": "reports/postman.pdf",
     "available": true,
     "description": "Compromission complète d'un environnement Web."
   }
