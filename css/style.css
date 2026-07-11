@@ -149,6 +149,7 @@ h3 { font-size: 1.1rem; margin-bottom: .5rem; }
   font-size: 1.1rem; color: var(--text-muted);
   max-width: 560px; margin-bottom: 2.5rem; line-height: 1.7;
 }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
 .btn {
   display: inline-flex; align-items: center; gap: .5rem;
   padding: .75rem 1.75rem;
@@ -446,3 +447,26 @@ footer a:hover { color: var(--accent); }
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #3a3a3a; }
+
+/* ─── ACCESSIBILITÉ ─────────────────────────────────────────────────────────── */
+/* Anneau de focus visible au clavier (et tout device qui l'active) */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+/* On supprime l'outline par défaut uniquement quand :focus-visible ne s'applique pas (souris) */
+:focus:not(:focus-visible) { outline: none; }
+
+/* Respect du réglage système « réduire les animations » */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  /* Le scroll-reveal injecté par main.js reste lisible immédiatement */
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+}
