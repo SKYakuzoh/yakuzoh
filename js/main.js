@@ -11,7 +11,6 @@ if (toggle && navList) {
     toggle.setAttribute('aria-expanded', open);
   });
 
-  // close on link click
   navList.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navList.classList.remove('open');
@@ -20,7 +19,6 @@ if (toggle && navList) {
     });
   });
 
-  // close on outside click
   document.addEventListener('click', e => {
     if (!toggle.contains(e.target) && !navList.contains(e.target)) {
       navList.classList.remove('open');
@@ -73,10 +71,10 @@ document.querySelectorAll('.card, .report-card, .kc-item, .contact-item, .cvss-i
   observer.observe(el);
 });
 
-/* ── Navbar shrink on scroll ────────────────────────────────────────────── */
+/* ── Navbar border on scroll ──────────────────────────────────────────────── */
 const navbar = document.querySelector('.navbar');
 if (navbar) {
   window.addEventListener('scroll', () => {
-    navbar.style.borderBottomColor = window.scrollY > 10 ? 'rgba(30,30,30,.8)' : 'var(--border)';
+    navbar.style.borderBottomColor = window.scrollY > 10 ? 'var(--border-2)' : 'var(--border)';
   }, { passive: true });
 }

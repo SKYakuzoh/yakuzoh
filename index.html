@@ -3,25 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SK Security · Pentest &amp; Red Team</title>
-  <meta name="description" content="Cabinet de pentest freelance français. Audit de sécurité offensive, Active Directory, Web Application, Infrastructure." />
+  <title data-i18n="meta.title.home">SK Security · Pentest</title>
+  <meta name="description" data-i18n-attr="content:meta.desc.home" content="Cabinet de pentest freelance français. Audit de sécurité offensive, Active Directory, Web Application, Infrastructure." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://skyakuzoh.github.io/yakuzoh/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="SK Security" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="SK Security · Pentest &amp; Red Team" />
+  <meta property="og:title" content="SK Security · Pentest" />
   <meta property="og:description" content="Cabinet de pentest freelance français. Audit de sécurité offensive, Active Directory, Web Application, Infrastructure." />
   <meta property="og:url" content="https://skyakuzoh.github.io/yakuzoh/" />
-  <meta property="og:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="SK Security — Pentest &amp; Red Team" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SK Security · Pentest &amp; Red Team" />
-  <meta name="twitter:description" content="Cabinet de pentest freelance français. Audit de sécurité offensive, Active Directory, Web Application, Infrastructure." />
-  <meta name="twitter:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,27 +30,35 @@
 
 <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
 <nav class="navbar" aria-label="Navigation principale">
-  <a href="index.html" class="nav-logo" aria-label="SK Security, accueil">
+  <a href="index.html" class="nav-logo" data-i18n-attr="aria-label:nav.logo" aria-label="SK Security, accueil">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
-            fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5"
-            stroke-linejoin="round"/>
-      <path d="M9 12l2 2 4-4" stroke="#CC2200" stroke-width="1.5"
+            fill="rgba(138,90,43,.15)" stroke="#8A5A2B" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#8A5A2B" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     SK&nbsp;<span>SECURITY</span>
   </a>
 
-  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-list" role="list">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="reports.html" data-i18n="nav.reports">Rapports</a></li>
+      <li><a href="methodology.html" data-i18n="nav.methodology">Méthodologie</a></li>
+      <li><a href="CV_ANNAS_PENTESTfinal.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
 
-  <ul class="nav-links" id="nav-list" role="list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="reports.html">Rapports</a></li>
-    <li><a href="methodology.html">Méthodologie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <button class="lang-toggle" id="lang-toggle" aria-label="Language: French / English">
+      <span class="lang-opt active" data-lang="fr">FR</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -65,27 +66,12 @@
   <!-- ── HERO ──────────────────────────────────────────────────────────── -->
   <section class="hero" id="accueil">
     <div class="container">
-      <p class="hero-eyebrow">Sécurité offensive</p>
-      <h1>Audit de sécurité <em>offensive</em><br>Pentest et Red Team</h1>
-      <p class="hero-sub">
-        SK Security accompagne les entreprises dans l'identification et
-        la correction de leurs vulnérabilités critiques.
-      </p>
+      <p class="hero-eyebrow" data-i18n="home.eyebrow">Sécurité offensive</p>
+      <h1 data-i18n-html="home.h1">Audit de sécurité <em>offensive</em><br>Pentest</h1>
+      <p class="hero-sub" data-i18n="home.sub">SK Security accompagne les entreprises dans l'identification et la correction de leurs vulnérabilités critiques.</p>
       <div class="hero-actions">
-        <a href="reports.html" class="btn">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"
-                  stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
-            <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.75"
-                      stroke-linejoin="round"/>
-            <line x1="9" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="1.75"
-                  stroke-linecap="round"/>
-            <line x1="9" y1="17" x2="13" y2="17" stroke="currentColor" stroke-width="1.75"
-                  stroke-linecap="round"/>
-          </svg>
-          Consulter les rapports
-        </a>
-        <a href="contact.html" class="btn btn-outline">Me contacter</a>
+        <a href="reports.html" class="btn" data-i18n="home.btnReports">Consulter les rapports</a>
+        <a href="contact.html" class="btn btn-outline" data-i18n="home.btnContact">Me contacter</a>
       </div>
     </div>
   </section>
@@ -93,41 +79,36 @@
   <!-- ── À PROPOS ──────────────────────────────────────────────────────── -->
   <section id="apropos">
     <div class="container">
-      <p class="section-label">À propos</p>
+      <p class="section-label" data-i18n="home.aboutLabel">À propos</p>
       <div class="about-grid">
         <div class="about-text">
           <h2>Annas RIO</h2>
-          <p>
-            Auditeur en sécurité offensive indépendant, spécialisé dans
-            l'évaluation des environnements complexes : Active Directory,
-            applications web et infrastructure réseau.
-          </p>
-          <p>
-            Chaque mission est conduite avec une approche méthodique,
-            des livrables professionnels et un retest systématique
-            des vulnérabilités corrigées.
-          </p>
+          <p data-i18n="home.aboutP1">Auditeur en sécurité offensive indépendant, spécialisé dans l'évaluation des environnements complexes : Active Directory, applications web et infrastructure réseau.</p>
+          <p data-i18n="home.aboutP2">Chaque mission est conduite avec une approche méthodique, des livrables professionnels et un retest systématique des vulnérabilités corrigées.</p>
           <div class="tag-list">
             <span class="tag accent">Active Directory</span>
             <span class="tag accent">Web Application</span>
             <span class="tag accent">Infrastructure</span>
-            <span class="tag">Red Team</span>
             <span class="tag">Pentest</span>
           </div>
         </div>
         <div>
-          <p class="section-label">Certifications &amp; Niveaux</p>
+          <p class="section-label" data-i18n-html="home.certLabel">Certifications &amp; Niveaux</p>
           <div class="cert-list">
-            <p>
-              <span>CPTS — Certified Penetration Testing Specialist <span class="mono" style="color:var(--accent);font-size:.75rem;">obtenu · 07/2026</span></span>
-              <a class="cert-link" href="certs/cpts-htb-certificate.pdf" target="_blank" rel="noopener">Certificat&nbsp;↗</a>
+            <p class="cert-with-logo">
+              <img class="cert-logo" src="assets/htblogocpts_beige.png" alt="HackTheBox CPTS" loading="lazy" />
+              <span data-i18n-html="home.cpts">CPTS · Certified Penetration Testing Specialist <span class="mono" style="color:var(--accent);font-size:.75rem;">obtenu · 07/2026</span></span>
+              <a class="cert-link" href="certs/cpts-htb-certificate.pdf" target="_blank" rel="noopener" data-i18n="home.certLink">Certificat&nbsp;↗</a>
+            </p>
+            <p class="cert-with-logo">
+              <img class="cert-logo" src="assets/francecompetence_beige.png" alt="France Compétence" loading="lazy" />
+              <span data-i18n-html="home.m2i">M2i · Réaliser des tests d'intrusion (Pentesting) <span class="mono" style="color:var(--accent);font-size:.75rem;">RS7394 · 06/2026</span></span>
+              <a class="cert-link" href="certs/certification-m2i-pentesting.pdf" target="_blank" rel="noopener" data-i18n="home.certLink">Certificat&nbsp;↗</a>
             </p>
             <p>
-              <span>M2i — Réaliser des tests d'intrusion (Pentesting) <span class="mono" style="color:var(--accent);font-size:.75rem;">RS7394 · 06/2026</span></span>
-              <a class="cert-link" href="certs/certification-m2i-pentesting.pdf" target="_blank" rel="noopener">Certificat&nbsp;↗</a>
+              <span data-i18n-html="home.crtp">CRTP · Certified Red Team Professional <span class="mono" style="color:var(--accent);font-size:.75rem;">en préparation</span></span>
             </p>
-            <p>HackTheBox : Rank Hacker, Top&nbsp;700 mondial</p>
-            <p>Machines HTB résolues avec focus Active Directory et Web</p>
+            <p data-i18n="home.htbMachines">Machines HTB résolues avec focus Active Directory et Web</p>
           </div>
         </div>
       </div>
@@ -137,8 +118,8 @@
   <!-- ── POURQUOI SK SECURITY ───────────────────────────────────────────── -->
   <section id="pourquoi">
     <div class="container">
-      <p class="section-label">Pourquoi SK Security</p>
-      <h2>Ce qui nous distingue</h2>
+      <p class="section-label" data-i18n="home.whyLabel">Pourquoi SK Security</p>
+      <h2 data-i18n="home.whyTitle">Ce qui nous distingue</h2>
       <div class="cards-grid">
 
         <div class="card">
@@ -148,11 +129,8 @@
             <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"
                   stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <h3>Expertise technique offensive</h3>
-          <p>
-            Chaque engagement reproduit une attaque réelle : exploitation de chaînes d'attaque complètes,
-            mouvement latéral et élévation de privilèges. Le scan automatisé n'est jamais l'unique méthode.
-          </p>
+          <h3 data-i18n="home.card1Title">Expertise technique offensive</h3>
+          <p data-i18n="home.card1Desc">Chaque engagement reproduit une attaque réelle : exploitation de chaînes d'attaque complètes, mouvement latéral et élévation de privilèges. Le scan automatisé n'est jamais l'unique méthode.</p>
         </div>
 
         <div class="card">
@@ -163,11 +141,8 @@
             <line x1="9" y1="13" x2="15" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             <line x1="9" y1="17" x2="13" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <h3>Rapports lisibles et actionnables</h3>
-          <p>
-            Chaque vulnérabilité est documentée avec sa preuve de concept, son impact business,
-            son score CVSS 3.1 / CVSS 4.0 et des recommandations de remédiation concrètes.
-          </p>
+          <h3 data-i18n="home.card2Title">Rapports lisibles et actionnables</h3>
+          <p data-i18n="home.card2Desc">Chaque vulnérabilité est documentée avec sa preuve de concept, son impact business, son score CVSS 3.1 / CVSS 4.0 et des recommandations de remédiation concrètes.</p>
         </div>
 
         <div class="card">
@@ -176,11 +151,8 @@
             <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5"
                       stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <h3>Suivi post-audit et retest</h3>
-          <p>
-            La mission ne s'arrête pas au rapport. Un accompagnement à la remédiation
-            et un retest sont inclus pour valider la correction effective des vulnérabilités identifiées.
-          </p>
+          <h3 data-i18n="home.card3Title">Suivi post-audit et retest</h3>
+          <p data-i18n="home.card3Desc">La mission ne s'arrête pas au rapport. Un accompagnement à la remédiation et un retest sont inclus pour valider la correction effective des vulnérabilités identifiées.</p>
         </div>
 
       </div>
@@ -191,11 +163,12 @@
 
 <footer>
   <div class="container">
-    © 2026 SK Security ·
+    <span data-i18n="footer.copy">© 2026 SK Security ·</span>
     <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

@@ -3,50 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact · SK Security</title>
-  <meta name="description" content="Contactez SK Security pour vos besoins en audit de sécurité offensive et pentest freelance. Béziers, 34500 Hérault." />
+  <title data-i18n="meta.title.contact">Contact · SK Security</title>
+  <meta name="description" data-i18n-attr="content:meta.desc.contact" content="Contactez SK Security pour vos besoins en audit de sécurité offensive et pentest freelance." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://skyakuzoh.github.io/yakuzoh/contact.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="SK Security" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="Contact · SK Security" />
-  <meta property="og:description" content="Contactez SK Security pour vos besoins en audit de sécurité offensive et pentest freelance. Béziers, 34500 Hérault." />
-  <meta property="og:url" content="https://skyakuzoh.github.io/yakuzoh/contact.html" />
-  <meta property="og:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="SK Security — Contact" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact · SK Security" />
-  <meta name="twitter:description" content="Contactez SK Security pour vos besoins en audit de sécurité offensive et pentest freelance. Béziers, 34500 Hérault." />
-  <meta name="twitter:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
 </head>
 <body>
 
 <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
 <nav class="navbar" aria-label="Navigation principale">
-  <a href="index.html" class="nav-logo" aria-label="SK Security, accueil">
+  <a href="index.html" class="nav-logo" data-i18n-attr="aria-label:nav.logo" aria-label="SK Security, accueil">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
-            fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M9 12l2 2 4-4" stroke="#CC2200" stroke-width="1.5"
+            fill="rgba(138,90,43,.15)" stroke="#8A5A2B" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#8A5A2B" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     SK&nbsp;<span>SECURITY</span>
   </a>
 
-  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-list" role="list">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="reports.html" data-i18n="nav.reports">Rapports</a></li>
+      <li><a href="methodology.html" data-i18n="nav.methodology">Méthodologie</a></li>
+      <li><a href="CV_ANNAS_PENTESTfinal.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
 
-  <ul class="nav-links" id="nav-list" role="list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="reports.html">Rapports</a></li>
-    <li><a href="methodology.html">Méthodologie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <button class="lang-toggle" id="lang-toggle" aria-label="Language: French / English">
+      <span class="lang-opt active" data-lang="fr">FR</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -54,12 +49,9 @@
 
     <!-- ── PAGE HERO ────────────────────────────────────────────────────── -->
     <div class="page-hero">
-      <p class="section-label">Contact</p>
-      <h1>Parlons de votre mission</h1>
-      <p>
-        Disponible pour missions freelance et sous-traitance en sécurité offensive.
-        Réponse sous 24&nbsp;h.
-      </p>
+      <p class="section-label" data-i18n="contact.label">Contact</p>
+      <h1 data-i18n="contact.h1">Parlons de votre mission</h1>
+      <p data-i18n-html="contact.intro">Disponible pour missions freelance et sous-traitance en sécurité offensive. Réponse sous 24&nbsp;h.</p>
     </div>
 
     <!-- ── CONTACT GRID ──────────────────────────────────────────────────── -->
@@ -72,50 +64,45 @@
           <a href="mailto:sk.security.contact@gmail.com" class="contact-item" style="text-decoration:none; color:inherit;">
             <svg class="contact-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
-              <polyline points="2,4 12,13 22,4" stroke="currentColor" stroke-width="1.5"
-                        stroke-linejoin="round"/>
+              <polyline points="2,4 12,13 22,4" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
             </svg>
             <div class="contact-item-text">
-              <div class="label">Email</div>
+              <div class="label" data-i18n="contact.emailLabel">Email</div>
               <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
             </div>
           </a>
 
           <div class="contact-item">
             <svg class="contact-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z"
-                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-              <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5"
-                    stroke-linejoin="round"/>
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+              <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
               <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
             </svg>
             <div class="contact-item-text">
-              <div class="label">LinkedIn</div>
+              <div class="label" data-i18n="contact.linkedinLabel">LinkedIn</div>
               <a href="https://www.linkedin.com/in/annas-rio-224492301/" target="_blank" rel="noopener">Annas Rio</a>
             </div>
           </div>
 
           <div class="contact-item">
             <svg class="contact-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"
-                    stroke="currentColor" stroke-width="1.5"/>
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z" stroke="currentColor" stroke-width="1.5"/>
               <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
             </svg>
             <div class="contact-item-text">
-              <div class="label">Localisation</div>
-              <p>Béziers, 34500 Hérault</p>
+              <div class="label" data-i18n="contact.locLabel">Localisation</div>
+              <p data-i18n="contact.locValue">Béziers, 34500 Hérault</p>
             </div>
           </div>
 
           <div class="contact-item">
             <svg class="contact-item-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
-              <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5"
-                        stroke-linecap="round"/>
+              <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
             </svg>
             <div class="contact-item-text">
-              <div class="label">Disponibilité</div>
-              <p>Missions freelance &amp; sous-traitance</p>
+              <div class="label" data-i18n="contact.availLabel">Disponibilité</div>
+              <p data-i18n-html="contact.availValue">Missions freelance &amp; sous-traitance</p>
             </div>
           </div>
 
@@ -123,25 +110,17 @@
 
         <!-- Right: CTA -->
         <div class="contact-cta">
-          <p class="section-label">Démarrer une mission</p>
-          <h3>Besoin d'un audit de sécurité ?</h3>
-          <p>
-            Que ce soit un pentest ponctuel, un audit Active Directory,
-            une évaluation d'application web ou une mission de sous-traitance,
-            décrivez votre besoin par email et je vous réponds sous 24&nbsp;h
-            avec une proposition adaptée.
-          </p>
-          <a href="mailto:sk.security.contact@gmail.com?subject=Demande%20de%20mission%20pentest" class="btn">
+          <p class="section-label" data-i18n="contact.ctaLabel">Démarrer une mission</p>
+          <h3 data-i18n="contact.ctaTitle">Besoin d'un audit de sécurité ?</h3>
+          <p data-i18n-html="contact.ctaDesc">Que ce soit un pentest ponctuel, un audit Active Directory ou une mission de sous-traitance, décrivez votre besoin par email et je vous réponds sous 24&nbsp;h avec une proposition adaptée.</p>
+          <a href="mailto:sk.security.contact@gmail.com?subject=Demande%20de%20mission%20pentest" class="btn" data-i18n-mailsubject="1" data-i18n="contact.sendBtn">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.75"/>
-              <polyline points="2,4 12,13 22,4" stroke="currentColor" stroke-width="1.75"
-                        stroke-linejoin="round"/>
+              <polyline points="2,4 12,13 22,4" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round"/>
             </svg>
             Envoyer un email
           </a>
-          <p style="font-size:.78rem; color:var(--text-muted); margin-top:1rem; margin-bottom:0;">
-            Aucun formulaire. La communication est directe et confidentielle.
-          </p>
+          <p style="font-size:.78rem; color:var(--text-muted); margin-top:1rem; margin-bottom:0;" data-i18n="contact.note">Aucun formulaire. La communication est directe et confidentielle.</p>
         </div>
 
       </div><!-- /contact-grid -->
@@ -152,11 +131,12 @@
 
 <footer>
   <div class="container">
-    © 2026 SK Security ·
+    <span data-i18n="footer.copy">© 2026 SK Security ·</span>
     <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
