@@ -3,50 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Méthodologie · SK Security</title>
-  <meta name="description" content="Approche structurée basée sur la Cyber Kill Chain. Scoring CVSS 3.1 / CVSS 4.0, outils et livrables." />
+  <title data-i18n="meta.title.methodology">Méthodologie · SK Security</title>
+  <meta name="description" data-i18n-attr="content:meta.desc.methodology" content="Approche structurée basée sur la Cyber Kill Chain." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://skyakuzoh.github.io/yakuzoh/methodology.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="SK Security" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="Méthodologie · SK Security" />
-  <meta property="og:description" content="Approche structurée basée sur la Cyber Kill Chain. Scoring CVSS 3.1 / CVSS 4.0, outils et livrables." />
-  <meta property="og:url" content="https://skyakuzoh.github.io/yakuzoh/methodology.html" />
-  <meta property="og:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="SK Security — Méthodologie" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Méthodologie · SK Security" />
-  <meta name="twitter:description" content="Approche structurée basée sur la Cyber Kill Chain. Scoring CVSS 3.1 / CVSS 4.0, outils et livrables." />
-  <meta name="twitter:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
 </head>
 <body>
 
 <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
 <nav class="navbar" aria-label="Navigation principale">
-  <a href="index.html" class="nav-logo" aria-label="SK Security, accueil">
+  <a href="index.html" class="nav-logo" data-i18n-attr="aria-label:nav.logo" aria-label="SK Security, accueil">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
-            fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M9 12l2 2 4-4" stroke="#CC2200" stroke-width="1.5"
+            fill="rgba(138,90,43,.15)" stroke="#8A5A2B" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#8A5A2B" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     SK&nbsp;<span>SECURITY</span>
   </a>
 
-  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-list" role="list">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="reports.html" data-i18n="nav.reports">Rapports</a></li>
+      <li><a href="methodology.html" data-i18n="nav.methodology">Méthodologie</a></li>
+      <li><a href="CV_ANNAS_PENTESTfinal.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
 
-  <ul class="nav-links" id="nav-list" role="list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="reports.html">Rapports</a></li>
-    <li><a href="methodology.html">Méthodologie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <button class="lang-toggle" id="lang-toggle" aria-label="Language: French / English">
+      <span class="lang-opt active" data-lang="fr">FR</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -54,237 +49,135 @@
 
     <!-- ── PAGE HERO ────────────────────────────────────────────────────── -->
     <div class="page-hero">
-      <p class="section-label">Approche</p>
-      <h1>Méthodologie</h1>
-      <p>
-        Chaque audit suit une approche structurée et reproductible, basée sur la
-        Cyber Kill Chain et les référentiels reconnus de l'industrie (PTES, OWASP, MITRE ATT&CK).
-      </p>
+      <p class="section-label" data-i18n="meth.label">Approche</p>
+      <h1 data-i18n="meth.h1">Méthodologie</h1>
+      <p data-i18n="meth.intro">Chaque audit suit une approche structurée et reproductible, basée sur la Cyber Kill Chain et les référentiels reconnus de l'industrie (PTES, OWASP, MITRE ATT&amp;CK).</p>
     </div>
 
     <!-- ── CYBER KILL CHAIN ──────────────────────────────────────────────── -->
     <section id="kill-chain" style="padding: 3rem 0 2rem; border: none;">
-      <p class="section-label">Cyber Kill Chain</p>
-      <h2>7 phases d'audit</h2>
+      <p class="section-label" data-i18n="meth.kcLabel">Cyber Kill Chain</p>
+      <h2 data-i18n="meth.kcTitle">7 phases d'audit</h2>
 
       <div class="kill-chain" role="list">
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">01</span>
-          <div class="kc-content">
-            <h3>Reconnaissance</h3>
-            <p>
-              La phase de reconnaissance combine collecte passive et active : OSINT,
-              énumération DNS, cartographie des services exposés et identification
-              des technologies en place.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n="kc1.t">Reconnaissance</h3><p data-i18n="kc1.d">La phase de reconnaissance combine collecte passive et active : OSINT, énumération DNS, cartographie des services exposés et identification des technologies en place.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">02</span>
-          <div class="kc-content">
-            <h3>Armement</h3>
-            <p>
-              Sur la base de la surface exposée, les vecteurs d'attaque pertinents sont
-              identifiés et préparés : exploitation de CVE connues et création de payloads
-              adaptés au contexte.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n-html="kc2.t">Armement</h3><p data-i18n="kc2.d">Sur la base de la surface exposée, les vecteurs d'attaque pertinents sont identifiés et préparés.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">03</span>
-          <div class="kc-content">
-            <h3>Livraison</h3>
-            <p>
-              Le vecteur d'attaque est déclenché selon le périmètre convenu : injection web,
-              exploitation de services réseau, phishing ciblé en contexte Red Team ou accès physique.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n="kc3.t">Livraison</h3><p data-i18n="kc3.d">Le vecteur d'attaque est déclenché selon le périmètre convenu.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">04</span>
-          <div class="kc-content">
-            <h3>Exploitation</h3>
-            <p>
-              L'exploit est exécuté pour obtenir un premier accès, élever les privilèges locaux
-              et exploiter les mauvaises configurations présentes dans les services, les applications
-              ou l'Active Directory.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n="kc4.t">Exploitation</h3><p data-i18n="kc4.d">L'exploit est exécuté pour obtenir un premier accès et élever les privilèges.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">05</span>
-          <div class="kc-content">
-            <h3>Installation</h3>
-            <p>
-              Les accès obtenus sont maintenus et des mécanismes de persistance sont déployés.
-              L'ensemble des actions est documenté de façon exhaustive pour le rapport et le retest.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n="kc5.t">Installation</h3><p data-i18n="kc5.d">Les accès obtenus sont maintenus et des mécanismes de persistance sont déployés.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">06</span>
-          <div class="kc-content">
-            <h3>Command &amp; Control</h3>
-            <p>
-              Le mouvement latéral est mené dans l'environnement par propagation horizontale
-              et verticale, pivoting réseau et compromission de comptes privilégiés
-              jusqu'aux contrôleurs de domaine.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n-html="kc6.t">Command &amp; Control</h3><p data-i18n="kc6.d">Le mouvement latéral est mené dans l'environnement par pivoting réseau et compromission de comptes privilégiés.</p></div>
         </div>
-
         <div class="kc-item" role="listitem">
           <span class="kc-num">07</span>
-          <div class="kc-content">
-            <h3>Actions sur objectifs</h3>
-            <p>
-              Les objectifs définis sont atteints, qu'il s'agisse de la compromission du domaine,
-              de l'accès à des données sensibles ou d'une exfiltration simulée. L'impact réel est
-              démontré et documenté dans un rapport incluant la timeline complète des actions.
-            </p>
-          </div>
+          <div class="kc-content"><h3 data-i18n="kc7.t">Actions sur objectifs</h3><p data-i18n="kc7.d">Les objectifs définis sont atteints et l'impact réel est démontré dans un rapport incluant la timeline complète.</p></div>
         </div>
-
       </div>
     </section>
 
     <!-- ── SCORING CVSS ──────────────────────────────────────────────────── -->
     <section id="scoring" style="padding: 3rem 0 2rem;">
-      <p class="section-label">Scoring</p>
-      <h2>CVSS 3.1 / CVSS 4.0 : Niveaux de sévérité</h2>
-      <p style="color:var(--text-muted);font-size:.9rem; max-width:560px;">
-        Chaque vulnérabilité est scorée selon les standards CVSS 3.1 et CVSS 4.0, en tenant compte
-        de l'exploitabilité, de l'impact et du contexte environnemental.
-      </p>
+      <p class="section-label" data-i18n="meth.scoringLabel">Scoring</p>
+      <h2 data-i18n="meth.scoringTitle">CVSS 3.1 / CVSS 4.0 : Niveaux de sévérité</h2>
+      <p style="color:var(--text-muted);font-size:.9rem; max-width:560px;" data-i18n="meth.scoringIntro">Chaque vulnérabilité est scorée selon les standards CVSS 3.1 et CVSS 4.0.</p>
 
       <div class="cvss-grid">
         <div class="cvss-item" style="border-left: 3px solid var(--crit);">
           <div class="score" style="color:var(--crit);">9.0 – 10.0</div>
-          <div class="label">Critique</div>
-          <div class="range">Exploitation immédiate, impact maximal</div>
+          <div class="label" data-i18n="cvss.crit.label">Critique</div>
+          <div class="range" data-i18n="cvss.crit.range">Exploitation immédiate, impact maximal</div>
         </div>
         <div class="cvss-item" style="border-left: 3px solid var(--high);">
           <div class="score" style="color:var(--high);">7.0 – 8.9</div>
-          <div class="label">Élevé</div>
-          <div class="range">Exploitation probable, impact significatif</div>
+          <div class="label" data-i18n="cvss.high.label">Élevé</div>
+          <div class="range" data-i18n="cvss.high.range">Exploitation probable, impact significatif</div>
         </div>
         <div class="cvss-item" style="border-left: 3px solid var(--med);">
           <div class="score" style="color:var(--med);">4.0 – 6.9</div>
-          <div class="label">Moyen</div>
-          <div class="range">Conditions requises, impact limité</div>
+          <div class="label" data-i18n="cvss.med.label">Moyen</div>
+          <div class="range" data-i18n="cvss.med.range">Conditions requises, impact limité</div>
         </div>
         <div class="cvss-item" style="border-left: 3px solid var(--low);">
           <div class="score" style="color:var(--low);">0.1 – 3.9</div>
-          <div class="label">Bas</div>
-          <div class="range">Exploitation difficile, faible impact</div>
+          <div class="label" data-i18n="cvss.low.label">Bas</div>
+          <div class="range" data-i18n="cvss.low.range">Exploitation difficile, faible impact</div>
         </div>
         <div class="cvss-item" style="border-left: 3px solid var(--border);">
           <div class="score" style="color:var(--text-muted);">0.0</div>
-          <div class="label" style="color:var(--text-muted);">Nul / Informatif</div>
-          <div class="range">Bonne pratique, aucun risque direct</div>
+          <div class="label" style="color:var(--text-muted);" data-i18n="cvss.none.label">Nul / Informatif</div>
+          <div class="range" data-i18n="cvss.none.range">Bonne pratique, aucun risque direct</div>
         </div>
       </div>
     </section>
 
     <!-- ── OUTILS ────────────────────────────────────────────────────────── -->
     <section id="outils" style="padding: 3rem 0 2rem;">
-      <p class="section-label">Outillage</p>
-      <h2>Catégories d'outils</h2>
+      <p class="section-label" data-i18n="meth.toolsLabel">Outillage</p>
+      <h2 data-i18n="meth.toolsTitle">Catégories d'outils</h2>
 
       <div class="tools-grid">
-        <div class="tool-cat">
-          <h3>Recon &amp; Énumération</h3>
-          <p>Cette phase couvre le scan réseau et la découverte de services, l'énumération web par répertoires et sous-domaines, la reconnaissance Active Directory ainsi que la collecte passive via OSINT.</p>
-        </div>
-        <div class="tool-cat">
-          <h3>Exploitation</h3>
-          <p>Les vulnérabilités web sont exploitées de manière ciblée : injections et contournements d'authentification, failles Active Directory (AS-REP roasting, Kerberoasting, abus d'ACL), brute-force ciblé et CVE publics selon le contexte.</p>
-        </div>
-        <div class="tool-cat">
-          <h3>Post-Exploitation</h3>
-          <p>Une fois l'accès initial obtenu, le pivoting et le mouvement latéral étendent la compromission. L'élévation de privilèges, l'extraction de credentials et la mise en place de persistance ou d'infrastructure C2 sont réalisées dans le cadre des missions Red Team.</p>
-        </div>
-        <div class="tool-cat">
-          <h3>Reporting</h3>
-          <p>Chaque action est consignée avec ses preuves de concept, captures d'écran et logs annotés. Une timeline horodatée retrace l'ensemble de l'engagement, servant de base à la rédaction du rapport PDF professionnel.</p>
-        </div>
+        <div class="tool-cat"><h3 data-i18n-html="tool1.t">Recon &amp; Énumération</h3><p data-i18n="tool1.d">Scan réseau, découverte de services, énumération web, reconnaissance Active Directory, OSINT.</p></div>
+        <div class="tool-cat"><h3 data-i18n="tool2.t">Exploitation</h3><p data-i18n="tool2.d">Injections, contournements d'authentification, failles AD, brute-force ciblé, CVE publics.</p></div>
+        <div class="tool-cat"><h3 data-i18n="tool3.t">Post-Exploitation</h3><p data-i18n="tool3.d">Pivoting, mouvement latéral, élévation de privilèges, extraction de credentials, C2.</p></div>
+        <div class="tool-cat"><h3 data-i18n="tool4.t">Reporting</h3><p data-i18n="tool4.d">Preuves de concept, captures, logs annotés, timeline horodatée, rapport PDF.</p></div>
       </div>
     </section>
 
     <!-- ── LIVRABLES ──────────────────────────────────────────────────────── -->
     <section id="livrables" style="padding: 3rem 0 4rem; border-top: 1px solid var(--border);">
-      <p class="section-label">Livrables</p>
-      <h2>Ce que vous recevez</h2>
+      <p class="section-label" data-i18n="meth.delivLabel">Livrables</p>
+      <h2 data-i18n="meth.delivTitle">Ce que vous recevez</h2>
 
       <div class="deliverables">
         <div class="deliverable-item">
           <svg class="del-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
             <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="1.5"/>
           </svg>
-          <div>
-            <h3>Rapport PDF professionnel</h3>
-            <p>Le rapport comprend un résumé exécutif non technique et un volet technique détaillé. Chaque vulnérabilité y est décrite avec sa preuve de concept, son score CVSS 3.1 / CVSS 4.0, son impact business et des recommandations de remédiation concrètes.</p>
-          </div>
+          <div><h3 data-i18n="del1.t">Rapport PDF professionnel</h3><p data-i18n="del1.d">Résumé exécutif et volet technique détaillé, avec preuve de concept, score CVSS, impact business et recommandations.</p></div>
         </div>
-
         <div class="deliverable-item">
           <svg class="del-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/>
-            <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5"
-                      stroke-linecap="round"/>
+            <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <div>
-            <h3>Timeline des actions</h3>
-            <p>Journal chronologique horodaté de l'ensemble des actions réalisées pendant l'audit, assurant une traçabilité complète pour vos besoins d'audit interne ou de conformité.</p>
-          </div>
+          <div><h3 data-i18n="del2.t">Timeline des actions</h3><p data-i18n="del2.d">Journal chronologique horodaté des actions, pour la traçabilité et la conformité.</p></div>
         </div>
-
         <div class="deliverable-item">
           <svg class="del-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
-                     stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
           </svg>
-          <div>
-            <h3>Indicateurs de compromission (IoC)</h3>
-            <p>Un inventaire des artefacts laissés pendant le test (adresses IP, hashes, fichiers créés) est fourni pour faciliter le nettoyage et la comparaison avec les alertes de votre SOC.</p>
-          </div>
+          <div><h3 data-i18n="del3.t">Indicateurs de compromission (IoC)</h3><p data-i18n="del3.d">Inventaire des artefacts (IP, hashes, fichiers) pour le nettoyage et la comparaison SOC.</p></div>
         </div>
-
         <div class="deliverable-item">
           <svg class="del-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
-                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M9 11l3 3L22 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
           </svg>
-          <div>
-            <h3>Plan de remédiation priorisé</h3>
-            <p>Roadmap de correction ordonnée par criticité et effort de remédiation,
-            avec références vers les correctifs officiels (CVE, vendor advisories).</p>
-          </div>
+          <div><h3 data-i18n="del4.t">Plan de remédiation priorisé</h3><p data-i18n="del4.d">Roadmap de correction par criticité, avec références aux correctifs officiels.</p></div>
         </div>
-
         <div class="deliverable-item">
           <svg class="del-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
-                  stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5"
-                  stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
-          <div>
-            <h3>Retest inclus</h3>
-            <p>Une fois les corrections appliquées, un retest ciblé valide que les
-            vulnérabilités critiques et élevées ont été correctement corrigées.
-            Attestation de remédiation fournie.</p>
-          </div>
+          <div><h3 data-i18n="del5.t">Retest inclus</h3><p data-i18n="del5.d">Retest ciblé des vulnérabilités critiques et élevées + attestation de remédiation.</p></div>
         </div>
       </div>
     </section>
@@ -294,11 +187,12 @@
 
 <footer>
   <div class="container">
-    © 2026 SK Security ·
+    <span data-i18n="footer.copy">© 2026 SK Security ·</span>
     <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

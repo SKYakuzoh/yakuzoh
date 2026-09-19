@@ -3,50 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rapports d'audit · SK Security</title>
-  <meta name="description" content="Rapports de pentest sur machines HackTheBox retirées. Active Directory, Web Application, Infrastructure." />
+  <title data-i18n="meta.title.reports">Rapports d'audit · SK Security</title>
+  <meta name="description" data-i18n-attr="content:meta.desc.reports" content="Rapports de pentest sur machines HackTheBox retirées." />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="canonical" href="https://skyakuzoh.github.io/yakuzoh/reports.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="SK Security" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="Rapports d'audit · SK Security" />
-  <meta property="og:description" content="Rapports de pentest sur machines HackTheBox retirées. Active Directory, Web Application, Infrastructure." />
-  <meta property="og:url" content="https://skyakuzoh.github.io/yakuzoh/reports.html" />
-  <meta property="og:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="SK Security — Rapports d'audit" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rapports d'audit · SK Security" />
-  <meta name="twitter:description" content="Rapports de pentest sur machines HackTheBox retirées. Active Directory, Web Application, Infrastructure." />
-  <meta name="twitter:image" content="https://skyakuzoh.github.io/yakuzoh/assets/og-image.png" />
 </head>
 <body>
 
 <!-- ── NAVBAR ──────────────────────────────────────────────────────────── -->
 <nav class="navbar" aria-label="Navigation principale">
-  <a href="index.html" class="nav-logo" aria-label="SK Security, accueil">
+  <a href="index.html" class="nav-logo" data-i18n-attr="aria-label:nav.logo" aria-label="SK Security, accueil">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
       <path d="M12 2L4 5.5V11c0 4.418 3.358 8.166 8 9 4.642-.834 8-4.582 8-9V5.5L12 2Z"
-            fill="rgba(204,34,0,.15)" stroke="#CC2200" stroke-width="1.5" stroke-linejoin="round"/>
-      <path d="M9 12l2 2 4-4" stroke="#CC2200" stroke-width="1.5"
+            fill="rgba(138,90,43,.15)" stroke="#8A5A2B" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M9 12l2 2 4-4" stroke="#8A5A2B" stroke-width="1.5"
             stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     SK&nbsp;<span>SECURITY</span>
   </a>
 
-  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
-    <span></span><span></span><span></span>
-  </button>
+  <div class="nav-right">
+    <ul class="nav-links" id="nav-list" role="list">
+      <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
+      <li><a href="reports.html" data-i18n="nav.reports">Rapports</a></li>
+      <li><a href="methodology.html" data-i18n="nav.methodology">Méthodologie</a></li>
+      <li><a href="CV_ANNAS_PENTESTfinal.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">CV</a></li>
+      <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+    </ul>
 
-  <ul class="nav-links" id="nav-list" role="list">
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="reports.html">Rapports</a></li>
-    <li><a href="methodology.html">Méthodologie</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
+    <button class="lang-toggle" id="lang-toggle" aria-label="Language: French / English">
+      <span class="lang-opt active" data-lang="fr">FR</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-opt" data-lang="en">EN</span>
+    </button>
+
+    <button class="nav-toggle" data-i18n-attr="aria-label:nav.menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-list">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <main>
@@ -54,38 +49,35 @@
 
     <!-- ── PAGE HERO ────────────────────────────────────────────────────── -->
     <div class="page-hero">
-      <p class="section-label">Audits</p>
-      <h1>Rapports d'audit</h1>
-      <p>Rapports réalisés sur des machines HackTheBox retirées, dans un cadre légal et pédagogique.</p>
+      <p class="section-label" data-i18n="reports.label">Audits</p>
+      <h1 data-i18n="reports.h1">Rapports d'audit</h1>
+      <p data-i18n="reports.intro">Rapports réalisés sur des machines HackTheBox retirées, dans un cadre légal et pédagogique.</p>
     </div>
 
     <!-- ── DISCLAIMER ───────────────────────────────────────────────────── -->
-    <div class="disclaimer" role="note">
-      ⓘ&nbsp; Ces rapports sont réalisés sur des machines HackTheBox retirées du service actif,
-      dans un cadre légal et pédagogique. Ils illustrent la qualité des livrables fournis
-      dans le cadre de missions professionnelles.
+    <div class="disclaimer" role="note" data-i18n-html="reports.disclaimer">
+      ⓘ&nbsp; Ces rapports sont réalisés sur des machines HackTheBox retirées du service actif, dans un cadre légal et pédagogique. Ils illustrent la qualité des livrables fournis dans le cadre de missions professionnelles.
     </div>
 
     <!-- ── REPORTS CAROUSEL ───────────────────────────────────────────────── -->
     <div class="carousel-wrapper">
-      <button class="carousel-btn" id="prev-btn" aria-label="Précédent" disabled>&#8592;</button>
+      <button class="carousel-btn" id="prev-btn" data-i18n-attr="aria-label:reports.prev" aria-label="Précédent" disabled>&#8592;</button>
       <div class="reports-grid" id="reports-grid"></div>
-      <button class="carousel-btn" id="next-btn" aria-label="Suivant">&#8594;</button>
+      <button class="carousel-btn" id="next-btn" data-i18n-attr="aria-label:reports.next" aria-label="Suivant">&#8594;</button>
     </div>
 
     <!-- ── LEGEND ────────────────────────────────────────────────────────── -->
     <div style="margin: 3rem 0 4rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-      <p class="section-label" style="margin-bottom:1rem;">Légende des niveaux</p>
+      <p class="section-label" style="margin-bottom:1rem;" data-i18n="reports.legendLabel">Légende des niveaux</p>
       <div style="display:flex; flex-wrap:wrap; gap:.75rem;">
-        <span class="badge badge-crit">Critique</span>
-        <span class="badge badge-hard">Élevé</span>
-        <span class="badge badge-medium">Moyen</span>
-        <span class="badge badge-easy">Bas</span>
-        <span class="badge badge-easy" style="color:var(--text-muted);border-color:var(--border)">Informatif</span>
+        <span class="badge badge-crit" data-i18n="sev.crit">Critique</span>
+        <span class="badge badge-hard" data-i18n="sev.high">Élevé</span>
+        <span class="badge badge-medium" data-i18n="sev.med">Moyen</span>
+        <span class="badge badge-easy" data-i18n="sev.low">Bas</span>
+        <span class="badge badge-easy" style="color:var(--text-muted);border-color:var(--border)" data-i18n="sev.info">Informatif</span>
       </div>
-      <p style="font-size:.8rem; color:var(--text-muted); margin-top:1rem;">
-        Niveaux de sévérité basés sur le scoring CVSS 3.1 / CVSS 4.0.
-        Voir la <a href="methodology.html">page Méthodologie</a> pour les détails.
+      <p style="font-size:.8rem; color:var(--text-muted); margin-top:1rem;" data-i18n-html="reports.legendNote">
+        Niveaux de sévérité basés sur le scoring CVSS 3.1 / CVSS 4.0. Voir la <a href="methodology.html">page Méthodologie</a> pour les détails.
       </p>
     </div>
 
@@ -94,11 +86,12 @@
 
 <footer>
   <div class="container">
-    © 2026 SK Security ·
+    <span data-i18n="footer.copy">© 2026 SK Security ·</span>
     <a href="mailto:sk.security.contact@gmail.com">sk.security.contact@gmail.com</a>
   </div>
 </footer>
 
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/reports.js"></script>
 </body>

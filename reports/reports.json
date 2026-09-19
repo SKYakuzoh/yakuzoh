@@ -6,7 +6,8 @@
     "risk": "Critique",
     "file": "reports/egotistical_bank.pdf",
     "available": true,
-    "description": "Compromission complète d'un environnement Active Directory."
+    "description": "Compromission complète d'un environnement Active Directory.",
+    "description_en": "Full compromise of an Active Directory environment."
   },
   {
     "name": "Writeup",
@@ -15,7 +16,8 @@
     "risk": "Critique",
     "file": "reports/writeup.pdf",
     "available": true,
-    "description": "Compromission complète d'un environnement Web."
+    "description": "Compromission complète d'un environnement Web.",
+    "description_en": "Full compromise of a Web environment."
   },
   {
     "name": "Fluffy",
@@ -24,7 +26,8 @@
     "risk": "Critique",
     "file": "reports/fluffy.pdf",
     "available": true,
-    "description": "Compromission complète d'un environnement Active Directory."
+    "description": "Compromission complète d'un environnement Active Directory.",
+    "description_en": "Full compromise of an Active Directory environment."
   },
   {
     "name": "Jeeves",
@@ -33,7 +36,8 @@
     "risk": "Critique",
     "file": "reports/jeeves.pdf",
     "available": true,
-    "description": "Compromission complète d'un Serveur Windows."
+    "description": "Compromission complète d'un Serveur Windows.",
+    "description_en": "Full compromise of a Windows Server."
   },
   {
     "name": "Trick",
@@ -42,7 +46,8 @@
     "risk": "Critique",
     "file": "reports/trick.pdf",
     "available": true,
-    "description": "Compromission complète d'un environnement Web."
+    "description": "Compromission complète d'un environnement Web.",
+    "description_en": "Full compromise of a Web environment."
   },
   {
     "name": "Postman",
@@ -51,6 +56,7 @@
     "risk": "Critique",
     "file": "reports/postman.pdf",
     "available": true,
-    "description": "Compromission complète d'un environnement Web."
+    "description": "Compromission complète d'un environnement Web.",
+    "description_en": "Full compromise of a Web environment."
   }
 ]
