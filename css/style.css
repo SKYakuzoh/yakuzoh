@@ -71,6 +71,41 @@ a:hover { color: var(--accent-h); }
   margin-top: 2px;
 }
 
+/* CV dropdown (FR / EN choice) */
+.cv-dropdown { position: relative; }
+.cv-drop-btn {
+  display: inline-flex; align-items: center; gap: .3rem;
+  background: none; border: none; cursor: pointer;
+  font: inherit; font-size: .875rem; font-weight: 500;
+  color: var(--text-muted); letter-spacing: .02em;
+  transition: color .2s;
+}
+.cv-drop-btn::after { content: '▾'; font-size: .55em; opacity: .55; transition: transform .2s; }
+.cv-drop-btn:hover, .cv-dropdown.open .cv-drop-btn { color: var(--text); }
+.cv-dropdown.open .cv-drop-btn::after { transform: rotate(180deg); }
+.cv-menu {
+  position: absolute; top: calc(100% + 8px); left: 50%;
+  transform: translateX(-50%) translateY(-6px);
+  list-style: none; margin: 0; padding: .4rem; min-width: 170px;
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.28);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease;
+  z-index: 60;
+}
+.cv-dropdown:hover .cv-menu,
+.cv-dropdown.open .cv-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.cv-menu a {
+  display: block; padding: .5rem .8rem; border-radius: 7px;
+  font-size: .85rem; font-weight: 500; color: var(--text-muted);
+  white-space: nowrap; transition: color .15s, background .15s;
+}
+.cv-menu a:hover { color: var(--text); background: var(--bg); }
+.cv-menu .cv-flag { opacity: .6; margin-right: .4rem; }
+
 /* language toggle */
 .lang-toggle {
   display: inline-flex; align-items: center; gap: .35rem;
@@ -111,12 +146,20 @@ a:hover { color: var(--accent-h); }
     max-height: 0; overflow: hidden;
     transition: max-height .3s ease;
   }
-  .nav-links.open { max-height: 320px; }
+  .nav-links.open { max-height: 360px; }
   .nav-links li a {
     display: block; padding: .9rem 2rem;
     border-bottom: 1px solid var(--border);
     font-size: 1rem;
   }
+  .cv-drop-btn { padding: .9rem 2rem; width: 100%; justify-content: flex-start; }
+  .cv-menu {
+    position: static; transform: none; min-width: 0;
+    box-shadow: none; border: none; padding: 0 0 .4rem 1.5rem;
+    opacity: 1; visibility: visible; pointer-events: auto;
+  }
+  .cv-dropdown:not(.open) .cv-menu { display: none; }
+  .cv-menu a { padding: .7rem 2rem; border-bottom: 1px solid var(--border); }
 }
 
 /* ─── LAYOUT ──────────────────────────────────────────────────────────────── */

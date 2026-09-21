@@ -78,3 +78,32 @@ if (navbar) {
     navbar.style.borderBottomColor = window.scrollY > 10 ? 'var(--border-2)' : 'var(--border)';
   }, { passive: true });
 }
+
+/* ── CV dropdown (FR / EN choice) ─────────────────────────────────────────── */
+document.querySelectorAll('.cv-dropdown').forEach(dd => {
+  const btn = dd.querySelector('.cv-drop-btn');
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const open = dd.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  dd.querySelectorAll('.cv-menu a').forEach(a =>
+    a.addEventListener('click', () => dd.classList.remove('open'))
+  );
+});
+document.addEventListener('click', e => {
+  document.querySelectorAll('.cv-dropdown.open').forEach(dd => {
+    if (!dd.contains(e.target)) {
+      dd.classList.remove('open');
+      dd.querySelector('.cv-drop-btn')?.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.cv-dropdown.open').forEach(dd => {
+      dd.classList.remove('open');
+      dd.querySelector('.cv-drop-btn')?.setAttribute('aria-expanded', 'false');
+    });
+  }
+});

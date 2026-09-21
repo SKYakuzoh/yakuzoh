@@ -45,7 +45,13 @@
       <li><a href="index.html" data-i18n="nav.home">Accueil</a></li>
       <li><a href="reports.html" data-i18n="nav.reports">Rapports</a></li>
       <li><a href="methodology.html" data-i18n="nav.methodology">Méthodologie</a></li>
-      <li><a href="CV_ANNAS_PENTESTfinal.pdf" target="_blank" rel="noopener" data-i18n="nav.cv">CV</a></li>
+      <li class="cv-dropdown">
+        <button class="cv-drop-btn" data-i18n="nav.cv" aria-haspopup="true" aria-expanded="false">CV</button>
+        <ul class="cv-menu" role="menu">
+          <li><a href="CV_Annas_Rio_FR.pdf" target="_blank" rel="noopener"><span class="cv-flag">FR</span> <span data-i18n="cv.fr">Français</span></a></li>
+          <li><a href="CV_Annas_Rio_EN.pdf" target="_blank" rel="noopener"><span class="cv-flag">EN</span> <span data-i18n="cv.en">English</span></a></li>
+        </ul>
+      </li>
       <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
     </ul>
 
